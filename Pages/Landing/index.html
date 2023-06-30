@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Style/reset.css">
+    <link rel="stylesheet" href="../../Style/style.css">
+
+    <!-- Panel Scroll -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+
+    <title>Jeremy Chang</title>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-container">
+        <div id="cursor" class="cursor">
+          <div class="cursor-dot"></div>
+        </div>
+    </div>
+    
+    <!-- Landing -->
+    <section class="panel">
+        <!-- Overlay -->
+        <div class="project-overlay">
+            <h1 class="landing-hello">HELLO THERE!</h1>
+            <h1 class="project-title">I'M JEREMY</h1>
+            <!-- Description Container -->
+            <div class="project-detail">
+                <div class="description-container">
+                    <p class="landing-description">A UIUX designer</p>
+                    <p class="landing-tag">dedicated to creating digital experiences that bridge the gap between users and technology.</p>
+                </div>
+                <button class="panel-button" type="button" onclick="smoothScroll(document.getElementById('project-one'))">
+                    Explore Projects
+                    <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_down.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <!-- Video -->
+        <video autoplay muted loop>
+            <source src="../../Assets/Landing/Landing2023.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Nebula -->
+    <section class="panel" id="project-one">
+        <!-- Overlay -->
+        <div class="project-overlay">
+            <div>
+                <h1 class="project-title">Nebula</h1>
+            </div>
+            <!-- Description Container -->
+            <div class="project-detail">
+                <div class="description-container">
+                    <p class="landing-description">An ecosystem that learns and adapts to provide suggestions and the best sleep routine for individuals.</p>
+                    <p class="landing-tag">#EcosystemDesign</p>
+                </div>
+                <a href="../../Nebula/nebula.html" class="panel-button">
+                    View Project
+                    <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_down.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- Video -->
+        <video autoplay muted loop>
+            <source src="../../Assets/Landing/Nebula.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Angine -->
+    <section class="panel" id="project-one">
+        <!-- Overlay -->
+        <div class="project-overlay">
+            <div>
+                <h1 class="project-title">Angine</h1>
+            </div>
+            <!-- Description Container -->
+            <div class="project-detail">
+                <div class="description-container">
+                    <p class="landing-description">A virtual audio mixer that allows users to set up, manage, and save presets.</p>
+                    <p class="landing-tag">#SoftwareDesign</p>
+                </div>
+                <button class="panel-button" type="button" onclick="smoothScroll(document.getElementById('project-one'))">
+                    Explore Projects
+                    <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_down.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <!-- Video -->
+        <video autoplay muted loop>
+            <source src="../../Assets/Landing/Angine.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <script src="../../Interactions/cursor.js"></script>
+</body>
+</html>

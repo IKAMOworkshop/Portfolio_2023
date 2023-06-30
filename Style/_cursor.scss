@@ -1,0 +1,89 @@
+.cursor-container {
+    position: fixed;
+    width: 100%;
+    height:100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  
+  .cursor {
+    width: 64px;
+    height: 64px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100%;
+    border-color: rgba(255, 255, 255, .25);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+  }
+  
+  .cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255,255,255);
+    border-radius: 100%
+  }
+  
+  .blur-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    backdrop-filter: blur(12vmax);
+  }
+  
+  .gradient-wrapper {
+    position: fixed;
+    width: 100%;
+    height:100%;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  
+  .gradient-block {
+    background: linear-gradient(to right, #40ffb3, #ff40fc);
+    width: 500px;
+    height: 300px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    animation: rotate 20s infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  .landing {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

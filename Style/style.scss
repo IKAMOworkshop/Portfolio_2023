@@ -1,5 +1,6 @@
 @import "./scrollbar";
 @import "./cursor";
+@import "./navbar";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 body {
@@ -62,11 +63,11 @@ video {
     font-weight: 700;
     font-size: 5rem;
     color: rgb(255, 255, 255);
-    max-width: 500px;
+    max-width: 400px;
     position: absolute;
     transform-origin: 0% 100%;
     transform: rotate(90deg);
-    margin-top:-124px;
+    margin-top:-100px;
     margin-left: -16px;
 }
 
@@ -93,7 +94,7 @@ video {
 
 .footer-detail{
     text-decoration: none;
-    margin-right: 36px;
+    margin-right: 60px;
 }
 
 .footer-detail-container{

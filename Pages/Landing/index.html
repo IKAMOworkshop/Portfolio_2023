@@ -21,7 +21,7 @@
         <a class="nav-icon-container" href="">
             <img src="../../Assets/Icons/icon_logo.svg" alt="">
         </a>
-        <a class="nav-icon-container" href="">
+        <a id="menu-button" class="nav-icon-container">
             <img src="../../Assets/Icons/icon_menu.svg" alt="">
         </a>
         <div class="nav-social-container">
@@ -38,6 +38,72 @@
         <!-- scroll progress bar -->
         <div class="progress-bar-bg">
             <div id="progress-bar" class="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Nav Menu -->
+    <div id="nav-menu" class="nav-menu">
+        <!-- block -->
+        <div class="nav-block"></div>
+        <!-- Menu -->
+        <div class="menu-container">
+            <div style="display: flex; flex-direction: column;">
+                <a class="menu-title" href="">HOME</a>
+                <a class="menu-title" href="">LAB</a>
+                <a class="menu-title" href="">CODE</a>
+                <a class="menu-title" href="">ABOUT</a>
+            </div>
+        </div>
+        <!-- Project Menu -->
+        <div class="project-container">
+            <a class="project-tile p1" href="">
+                <div class="project-hover-overlay">
+                    <div class="title-container">
+                        <h1 class="project-subtitle">NEUBLA</h1>
+                        <p class="project-tag">#EcosystemDesign</p>
+                    </div>
+                </div>
+            </a>
+            <a class="project-tile p2" href="">
+                <div class="project-hover-overlay">
+                    <div class="title-container">
+                        <h1 class="project-subtitle">ANGINE</h1>
+                        <p class="project-tag">#SoftwareDesign</p>
+                    </div>
+                </div>
+            </a>
+            <a class="project-tile p3" href="">
+                <div class="project-hover-overlay">
+                    <div class="title-container">
+                        <h1 class="project-subtitle">IMMERESION LAB</h1>
+                        <p class="project-tag">#Tech-CenterDesign</p>
+                    </div>
+                </div>
+            </a>
+            <a class="project-tile p4" href="">
+                <div class="project-hover-overlay">
+                    <div class="title-container">
+                        <h1 class="project-subtitle">NEURON</h1>
+                        <p class="project-tag">#Internship</p>
+                    </div>
+                </div>
+            </a>
+            <a class="project-tile p5" href="">
+                <div class="project-hover-overlay">
+                    <div class="title-container">
+                        <h1 class="project-subtitle">AIRBNB</h1>
+                        <p class="project-tag">#BrandDesign</p>
+                    </div>
+                </div>
+            </a>
+            <a class="project-tile p6" href="">
+                <div class="project-hover-overlay">
+                    <div class="title-container">
+                        <h1 class="project-subtitle">FRACTURE</h1>
+                        <p class="project-tag">#InfoDesign</p>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -158,7 +224,7 @@
             <div class="project-detail">
                 <div class="description-container">
                     <p class="landing-description">A six months internship in a design agency working on various clients’ projects.</p>
-                    <p class="landing-tag">#ProfessionalExperience</p>
+                    <p class="landing-tag">#Internship</p>
                 </div>
                 <button class="panel-button" type="button" onclick="smoothScroll(document.getElementById('project-one'))">
                     Explore Projects
@@ -257,5 +323,6 @@
 
     <script src="../../Interactions/cursor.js"></script>
     <script src="../../Interactions/scrollPogress.js"></script>
+    <script src="../../Interactions/menu.js"></script>
 </body>
 </html>

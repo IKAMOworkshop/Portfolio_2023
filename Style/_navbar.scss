@@ -66,7 +66,7 @@
     height: 100%;
     background: rgba(16, 17, 18, .75);
     backdrop-filter: blur(1vmax);
-    display: flex;
+    display: none;
     opacity: 0;
     transition: opacity 1s;
 }
@@ -119,11 +119,11 @@
     text-decoration: none;
     margin-top: 8px;
     opacity: .2;
+    transition: opacity 1s;
 }
 
 .menu-title:hover{
     opacity: 1;
-    transition: opacity 1s;
 }
 
 .p1{
@@ -133,37 +133,31 @@
 }
 
 .p2{
-    background-image: url(../Assets/Nebula/images/Optimized/Header.webp);
+    background-image: url(../Assets//Angine/images/Header.webp);
     background-position: center;
     background-size: cover;
 }
 
 .p3{
-    background-image: url(../Assets/Nebula/images/Optimized/Header.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-.p3{
-    background-image: url(../Assets/Nebula/images/Optimized/Header.webp);
+    background-image: url(../Assets/Immersion_Lab/images/Header.webp);
     background-position: center;
     background-size: cover;
 }
 
 .p4{
-    background-image: url(../Assets/Nebula/images/Optimized/Header.webp);
+    background-image: url(../Assets/Neuron/images/Header.webp);
     background-position: center;
     background-size: cover;
 }
 
 .p5{
-    background-image: url(../Assets/Nebula/images/Optimized/Header.webp);
+    background-image: url(../Assets/Airbnb/images/Header.webp);
     background-position: center;
     background-size: cover;
 }
 
 .p6{
-    background-image: url(../Assets/Nebula/images/Optimized/Header.webp);
+    background-image: url(../Assets/Fracture/images/Header.webp);
     background-position: center;
     background-size: cover;
 }
@@ -176,11 +170,11 @@
     display: flex;
     align-items: end;
     opacity: 0;
+    transition: opacity 1s;
 }
 
 .project-hover-overlay:hover{
     opacity: 1;
-    transition: opacity 1s;
 }
 
 .title-container{

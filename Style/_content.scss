@@ -130,6 +130,22 @@
     gap: 36px;
 }
 
+.tri-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+}
+
+.tri-grid-box{
+    padding: 36px;
+    background-color: rgba(23, 26, 28, 1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
 .row{
     display: flex;
     justify-content: center;
@@ -170,6 +186,10 @@
     font-size: 2rem;
     color: rgba(255, 255, 255);
     line-height: 2.5rem;
+}
+
+.contained-text {
+    margin-bottom: 36px;
 }
 
 .col-heading{

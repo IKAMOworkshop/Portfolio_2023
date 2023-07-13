@@ -480,6 +480,14 @@ body .transition {
   gap: 36px;
 }
 
+.subtitle-container {
+  width: 50%;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .big-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;

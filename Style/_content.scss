@@ -51,6 +51,11 @@
     align-self: center;
 }
 
+.contained-padding{
+    padding: 60px;
+    box-sizing: border-box;
+}
+
 .project-details{
     width: 100%;
     display: flex;
@@ -180,6 +185,17 @@
     gap: 8px;
 }
 
+.image-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 17, 18, .8);
+    backdrop-filter: blur(.3vmax);
+    padding: 36px;
+    display: flex;
+    align-items: end;
+    box-sizing: border-box;
+}
+
 .big-title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -257,4 +273,13 @@
     font-size: 2rem;
     color: rgb(255, 255, 255);
     line-height: 1.5rem;
+}
+
+.caption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .7rem;
+    color: rgb(136, 154, 163);
+    line-height: 1rem;
+    width: 30%;
 }

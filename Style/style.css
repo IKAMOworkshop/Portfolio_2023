@@ -176,6 +176,7 @@ body .transition {
   width: 100%;
   height: 0%;
   background-color: rgb(255, 255, 255);
+  transition: height cubic-bezier(0.17, 0.67, 0.76, 0.99) 0.5s;
 }
 
 .nav-menu {
@@ -368,6 +369,12 @@ body .transition {
   align-self: center;
 }
 
+.sketchfab-container {
+  width: 100%;
+  background-color: rgb(23, 26, 28);
+  box-sizing: border-box;
+}
+
 .contained-padding {
   padding: 60px;
   box-sizing: border-box;
@@ -398,6 +405,18 @@ body .transition {
 .video-wrapper {
   width: 100%;
   height: 900px;
+  margin-bottom: 36px;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper-sm {
+  width: 100%;
+  height: 500px;
   margin-bottom: 36px;
   background-color: red;
   position: relative;

@@ -51,6 +51,22 @@
     align-self: center;
 }
 
+.icon-col-block{
+    width: 50%;
+    height: 1200px;
+    padding: 100px;
+    background-color: rgba(23, 26, 28, 1);
+    box-sizing: border-box;
+}
+
+.video-col-block{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
 .sketchfab-container{
     width: 100%;
     background-color: rgba(23, 26, 28, 1);
@@ -104,6 +120,7 @@
     background-color: red;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;

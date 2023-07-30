@@ -634,6 +634,12 @@ button {
 
 a {
   cursor: none;
+  transition: opacity 1s;
+}
+
+a:hover {
+  opacity: 0.5;
+  transition: opacity 1s;
 }
 
 .landing-video {

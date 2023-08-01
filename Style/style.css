@@ -702,6 +702,9 @@ body {
   background: rgb(16, 17, 18);
   overflow-x: hidden;
   cursor: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 button {

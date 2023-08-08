@@ -65,15 +65,16 @@
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: rgba(16, 17, 18, .75);
-    backdrop-filter: blur(1vmax);
+    background: rgba(16, 17, 18, .8);
+    backdrop-filter: blur(2vmax);
     display: none;
     opacity: 0;
     transition: opacity 1s;
+    box-sizing: border-box;
 }
 
 .nav-block{
-    width: 120px;
+    min-width: 80px;
     height: 100%;
 }
 
@@ -90,13 +91,14 @@
 }
 
 .project-container{
-    width: 80%;
+    width: 70%;
     height: auto;
-    padding: 100px;
+    padding: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 16px;
+    box-sizing: border-box;
 }
 
 .project-tiles{
@@ -110,6 +112,10 @@
 .project-tile{
     width: 100%;
     text-decoration: none
+}
+
+.project-tile:hover{
+    opacity: 1;
 }
 
 .menu-title{
@@ -195,4 +201,89 @@
     font-size: .8rem;
     color: rgba(255, 255, 255);
     margin-top: 8px;
+}
+
+// Responsive
+@media screen and (max-width: 1024px) {
+    .menu-container{
+        width: 30%;
+        height: 100%;
+    }
+    .project-container{
+        width: 70%;
+        padding: 48px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 16px;
+    }
+    .menu-title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container{
+        width: 100%;
+        height: 80px;
+        flex-direction: row;
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        border-color: rgb(255, 255, 255, .3);
+    }
+    .nav-icon-container{
+        width: 80px;
+    }
+    .progress-bar-bg{
+        display: none;
+    }
+    .nav-social-container{
+        flex-direction: row;
+        width: auto;
+        padding-right: 24px;
+        gap: 8px;
+    }
+    .nav-menu{
+        flex-direction: column;
+    }
+    .nav-block{
+        min-height: 80px;
+    }
+    .menu-container{
+        width: 100%;
+        height: 30%;
+        padding: 36px;
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        border-color: rgb(255, 255, 255, .3);
+        align-items: start;
+    }
+    .project-container{
+        width: 100%;
+        height: 70%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 8px;
+        box-sizing: border-box;
+        padding: 36px;
+    }
+    .title-container{
+        margin: 24px;
+    }
+}
+@media screen and (max-width: 480px){
+    .menu-title{
+        font-size: 2rem;
+    }
+    .menu-container{
+        padding: 24px
+    }
+    .project-container{
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding: 24px;
+    }
+    .title-container{
+        margin: 16px;
+    }
 }

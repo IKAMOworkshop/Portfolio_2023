@@ -13,6 +13,7 @@ body {
 
 button{
     cursor: none;
+    transition: opacity 1s;
 }
 
 a{
@@ -21,6 +22,11 @@ a{
 }
 
 a:hover{
+    opacity: .5;
+    transition: opacity 1s;
+}
+
+button:hover{
     opacity: .5;
     transition: opacity 1s;
 }
@@ -64,6 +70,7 @@ a:hover{
     font-weight: 700;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
+    margin: 0px 0px 0px -8px;
 }
 
 .project-title{
@@ -82,7 +89,7 @@ a:hover{
 .footer-title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
     max-width: 300px;
     position: absolute;
@@ -97,16 +104,16 @@ a:hover{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-self: end;
+    align-items: end;
 }
 
 .footer-detail{
     text-decoration: none;
-    margin-right: 60px;
 }
 
 .footer-detail-container{
     display: flex;
+    gap: 60px;
 }
 
 .description-container{
@@ -140,9 +147,9 @@ a:hover{
     font-weight: 700;
     font-size: 3rem;
     color: rgb(255, 255, 255);
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     max-width: 520px;
-    line-height: 20px;
+    line-height: 48px;
 }
 
 .footer-description{
@@ -169,4 +176,72 @@ a:hover{
     font-size: 1rem;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    align-self: end;
+    text-align: left;
+}
+
+// Responsive
+
+@media screen and (max-width: 1024px){
+    .landing-description{
+        font-size: .8rem;
+        max-width: 300px;
+        margin-bottom: 8px;
+    }
+    .landing-tag{
+        font-size: .8rem;
+        max-width: 320px;
+    }
+    .panel-button{
+        font-size: .8rem;
+        padding: 16px;
+    }
+    .footer-subtitle{
+        font-size: 2rem;
+        line-height:32px;
+        margin-bottom: 12px;
+    }
+    .footer-description{
+        font-size: .8rem;
+    }
+    .footer-detail-container{
+        gap: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-overlay{
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 200px;
+    }
+    .landing-hello{
+        margin: -48px 0px 0px -12px;
+        
+    }
+    .footer-detail-container{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .project-detail{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 24px;
+    }
+    .panel-button{
+        align-self: start;
+    }
+    .project-title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .project-overlay{
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 60px;
+        padding-top: 160px;
+    }
 }

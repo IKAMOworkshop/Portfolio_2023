@@ -86,8 +86,9 @@ body .transition {
 
 .gradient-block {
   background: linear-gradient(to right, #40ffb3, #ff40fc);
-  width: 500px;
-  height: 300px;
+  width: 30%;
+  height: 40%;
+  aspect-ratio: 1;
   border-radius: 100%;
   position: absolute;
   left: 50%;
@@ -409,25 +410,25 @@ body .transition {
 .page-container {
   width: 100%;
   display: flex;
-  align-items: stretch;
 }
 
 .nav-block {
-  width: 80px;
-  height: auto;
+  min-width: 80px;
+  min-height: 80px;
 }
 
 .content-container {
   width: 100%;
   height: auto;
   padding: 100px 80px 0px 80px;
+  box-sizing: border-box;
 }
 
 .col-wrapper {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   margin-bottom: 200px;
-  gap: 100px;
+  gap: 80px;
 }
 
 .col-reverse {
@@ -459,7 +460,7 @@ body .transition {
 
 .icon-col-block {
   width: 50%;
-  height: 1200px;
+  height: auto;
   padding: 100px;
   background-color: rgb(23, 26, 28);
   box-sizing: border-box;
@@ -502,7 +503,7 @@ body .transition {
 }
 
 .section-container {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 200px;
   box-sizing: border-box;
 }
@@ -530,6 +531,10 @@ body .transition {
   align-items: center;
 }
 
+.interaction-video {
+  height: 500px;
+}
+
 .content-video {
   position: absolute;
   -o-object-fit: cover;
@@ -539,7 +544,7 @@ body .transition {
 }
 
 .detail-container {
-  width: 25%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -547,13 +552,21 @@ body .transition {
 
 .image {
   margin-bottom: 200px;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .contained-image {
   width: 100%;
   height: auto;
+}
+
+.image-padding {
+  padding: 100px 100px 0px 100px;
+}
+
+.full-padding {
+  padding: 100px;
 }
 
 .interview-image {
@@ -583,6 +596,7 @@ body .transition {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 36px;
 }
 
@@ -653,9 +667,10 @@ body .transition {
 .big-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 12rem;
+  font-size: 11rem;
   color: rgb(255, 255, 255);
   margin-bottom: 100px;
+  max-width: 100%;
 }
 
 ul {
@@ -683,6 +698,9 @@ li {
 
 .text-container {
   margin-left: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .large-copy {
@@ -691,7 +709,7 @@ li {
   font-size: 4.5rem;
   color: rgb(255, 255, 255);
   line-height: 5.5rem;
-  width: 1200px;
+  max-width: 1200px;
   margin-bottom: 200px;
 }
 
@@ -701,8 +719,8 @@ li {
   font-size: 4.5rem;
   color: rgb(255, 255, 255);
   line-height: 5.5rem;
-  width: 1200px;
-  margin: 60px;
+  max-width: 1200px;
+  margin: 0px 0px 60px 0px;
 }
 
 .mid-copy {
@@ -784,6 +802,277 @@ li {
   width: 30%;
 }
 
+@media screen and (max-width: 1024px) {
+  .content-container {
+    padding: 80px 40px 0px 40px;
+  }
+  .project-details {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 60px;
+    gap: 16px;
+  }
+  .section-container {
+    margin-bottom: 100px;
+  }
+  .image {
+    margin-bottom: 100px;
+  }
+  .detail-container {
+    max-width: 100%;
+  }
+  .col-wrapper {
+    gap: 36px;
+    margin-bottom: 100px;
+  }
+  .big-title {
+    font-size: 7rem;
+  }
+  .large-copy {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 100px;
+  }
+  .about-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .mid-copy {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  .about-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  .col-heading {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-bottom: 8px;
+  }
+  .body-copy {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  .block-text {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  .caption {
+    width: 50%;
+  }
+  .margin-separater {
+    margin-bottom: 16px;
+  }
+  .img-col {
+    gap: 16px;
+  }
+  .video-wrapper {
+    height: 500px;
+    margin-bottom: 16px;
+  }
+  .video-wrapper-sm {
+    height: 300px;
+  }
+  .inner-block-container {
+    padding: 48px;
+  }
+  .triple-box-container {
+    gap: 16px;
+    margin-bottom: 100px;
+  }
+  .row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .col {
+    gap: 16px;
+  }
+  .content-block {
+    width: 100%;
+    gap: 24px;
+    padding: 36px;
+  }
+  .interview-image {
+    max-width: 48px;
+    max-height: 48px;
+  }
+  .subtitle-container {
+    margin-bottom: 24px;
+    width: 80%;
+  }
+  .inner-block-container {
+    padding: 36px;
+    margin-bottom: 16px;
+  }
+  .tri-grid {
+    gap: 16px;
+  }
+  .tri-grid-box {
+    padding: 24px;
+    gap: 16px;
+  }
+  .image-padding {
+    padding: 60px 60px 0px 60px;
+  }
+  .full-padding {
+    padding: 60px;
+  }
+  .contained-padding {
+    padding: 36px;
+  }
+  .icon-col-block {
+    padding: 60px;
+  }
+  .timeline-indicator {
+    height: 360px;
+  }
+  .text-container {
+    gap: 8px;
+    margin-left: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-container {
+    flex-direction: column;
+  }
+  .content-container {
+    padding: 36px 36px 0px 36px;
+  }
+  .project-details {
+    margin-top: 36px;
+  }
+  .detail-container {
+    gap: 4px;
+  }
+  .col-wrapper {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .section-container {
+    margin-bottom: 48px;
+  }
+  .image {
+    margin-bottom: 48px;
+  }
+  .big-title {
+    font-size: 4rem;
+    margin-bottom: 48px;
+  }
+  .large-copy {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 48px;
+  }
+  .about-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .mid-copy {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .about-subtitle {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 70%;
+  }
+  .body-copy {
+    font-size: 0.7em;
+    line-height: 1rem;
+  }
+  .caption {
+    width: 80%;
+  }
+  .stat-number {
+    font-size: 3rem;
+  }
+  .percentage-number {
+    font-size: 1.5rem;
+  }
+  .video-wrapper {
+    height: 300px;
+    margin-bottom: 16px;
+  }
+  .video-wrapper-sm {
+    height: 160px;
+    margin-bottom: 16px;
+  }
+  .interaction-video {
+    height: 300px;
+    margin-bottom: 16px;
+  }
+  .subtitle-container {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .tri-grid {
+    gap: 16px;
+  }
+  .tri-grid-box {
+    padding: 16px;
+  }
+  .image-padding {
+    padding: 24px 24px 0px 24px;
+  }
+  .full-padding {
+    padding: 24px;
+  }
+  .img-col {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .col {
+    width: 100%;
+    gap: 16px;
+  }
+  .icon-col-block {
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    margin-bottom: 16px;
+  }
+  .job-list-container {
+    width: 70%;
+    margin-left: 36px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content-container {
+    padding: 24px 24px 0px 24px;
+  }
+  .tri-grid {
+    gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .right-align {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    box-sizing: border-box;
+    gap: 16px;
+  }
+  .job-list-container {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 body {
   background: rgb(16, 17, 18);
   overflow-x: hidden;

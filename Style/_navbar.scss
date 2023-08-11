@@ -203,6 +203,26 @@
     margin-top: 8px;
 }
 
+.tooltip-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.tooltips{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .6rem;
+    color: rgb(255, 255, 255);
+    line-height: .8rem;
+    width: 50%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
 // Responsive
 @media screen and (max-width: 1024px) {
     .menu-container{

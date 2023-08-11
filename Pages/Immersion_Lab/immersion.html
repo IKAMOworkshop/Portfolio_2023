@@ -21,14 +21,18 @@
             <img src="../../Assets/Icons/icon_menu.svg" alt="A hamburger menu icon">
         </a>
         <div class="nav-social-container">
-            <a class="nav-social-icon email-link">
-                <img style="margin-top: 8px;" src="../../Assets/Icons/icon_mail.svg" alt="A mail icon representing my email">
+            <div class="tooltip-container">
+                <p class="tooltips" id="copied-succeed">Email copied!</p>
+                <p class="tooltips" id="copied-failed">On no, we're blocked!</p>
+            </div>
+            <a id="email-link" class="nav-social-icon email-link">
+                <img src="../../Assets/Icons/icon_mail.svg" alt="A mail icon representing my email">
             </a>
             <a class="nav-social-icon" target="_blank" href="https://www.linkedin.com/in/jeremystudio/">
-                <img style="margin-top: 8px;" src="../../Assets/Icons/icon_linkedinl.svg" alt="Social platform Linkedin's logo">
+                <img src="../../Assets/Icons/icon_linkedinl.svg" alt="Social platform Linkedin's logo">
             </a>
             <a class="nav-social-icon" target="_blank" href="https://github.com/IKAMOworkshop">
-                <img style="margin-top: 8px;" src="../../Assets/Icons/icon_github.svg" alt="Coding version control platform Github's logo.">
+                <img src="../../Assets/Icons/icon_github.svg" alt="Coding version control platform Github's logo.">
             </a>
         </div>
         <!-- scroll progress bar -->
@@ -36,7 +40,6 @@
             <div id="progress-bar" class="progress-bar"></div>
         </div>
     </nav>
-
     <!-- Nav Menu -->
     <nav id="nav-menu" class="nav-menu">
         <!-- block -->

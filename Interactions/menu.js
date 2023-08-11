@@ -39,14 +39,24 @@ function scrollProgress() {
 
 document.addEventListener('scroll', scrollProgress);
 
-const emailButton = document.getElementsByClassName('email-link');
+const emailButton = document.getElementById("email-link");
+const successMessage = document.getElementById("copied-succeed");
+const failedMessage = document.getElementById('copied-failed')
 
 function copyEmail() {
     navigator.clipboard.writeText("changjeremy0226@gmail.com").then(() => {
         console.log('Content copied to clipboard');
+        successMessage.style.opacity = "1";
+        setTimeout(function(){
+            successMessage.style.opacity = "0";
+        }, 5000)
         /* Resolved - text copied to clipboard successfully */
       },() => {
         console.error('Failed to copy');
+        successFailed.style.opacity = "1";
+        setTimeout(function(){
+            successFailed.style.opacity = "0";
+        }, 5000)
         /* Rejected - text failed to copy to the clipboard */
       });
 }

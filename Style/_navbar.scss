@@ -23,6 +23,7 @@
 }
 
 .nav-social-container{
+    background: none;
     width: 100%;
     padding-bottom: 36px;
     display: flex;
@@ -111,7 +112,8 @@
 
 .project-tile{
     width: 100%;
-    text-decoration: none
+    text-decoration: none;
+    text-align: left;
 }
 
 .project-tile:hover{
@@ -124,9 +126,9 @@
     font-size: 4rem;
     color: rgba(255, 255, 255);
     text-decoration: none;
-    margin-top: 8px;
     opacity: .2;
     transition: opacity 1s;
+    text-align: left;
 }
 
 .menu-title:hover{

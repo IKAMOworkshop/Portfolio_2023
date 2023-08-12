@@ -143,6 +143,7 @@ body .transition {
 }
 
 .nav-social-container {
+  background: none;
   width: 100%;
   padding-bottom: 36px;
   display: flex;
@@ -233,6 +234,7 @@ body .transition {
 .project-tile {
   width: 100%;
   text-decoration: none;
+  text-align: left;
 }
 
 .project-tile:hover {
@@ -245,9 +247,9 @@ body .transition {
   font-size: 4rem;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  margin-top: 8px;
   opacity: 0.2;
   transition: opacity 1s;
+  text-align: left;
 }
 
 .menu-title:hover {
@@ -1136,6 +1138,11 @@ body {
 
 button {
   cursor: none;
+  border: none;
+  background: none;
+  cursor: none;
+  margin: 0;
+  padding: 0;
   transition: opacity 1s;
 }
 

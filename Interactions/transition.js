@@ -14,7 +14,7 @@ if (homeMenuLink){
     homeMenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Landing/index.html";
+            location.href = "/";
         }, 800);
     });
 };
@@ -24,7 +24,7 @@ if (homeLogoLink){
     homeLogoLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Landing/index.html";
+            location.href = "/";
         }, 800);
     });
 };
@@ -34,7 +34,7 @@ if (labMenuLink){
     labMenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Lab/lab.html";
+            location.href = "/Pages/lab";
         }, 800);
     });
 };
@@ -44,7 +44,7 @@ if (codeMenuLink){
     codeMenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Code/code.html";
+            location.href = "/Pages/code";
         }, 800);
     });
 };
@@ -54,7 +54,7 @@ if (aboutMenuLink){
     aboutMenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/About/about.html";
+            location.href = "/Pages/about";
         }, 800);
     });
 };
@@ -64,7 +64,7 @@ if(p1MenuLink){
     p1MenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Nebula/nebula.html";
+            location.href = "/Pages/nebula";
         }, 800);
     });
 };
@@ -74,7 +74,7 @@ if(p1SectionLink){
     p1SectionLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Nebula/nebula.html";
+            location.href = "/Pages/nebula";
         }, 800);
     });
     
@@ -85,7 +85,7 @@ if(p2MenuLink){
     p2MenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Angine/aingine.html";
+            location.href = "/Pages/angine";
         }, 800);
     });
 };
@@ -95,7 +95,7 @@ if(p2SectionLink){
     p2SectionLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Angine/aingine.html";
+            location.href = "/Pages/angine";
         }, 800);
     });
 };
@@ -105,7 +105,7 @@ if(p3MenuLink){
     p3MenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Immersion_Lab/immersion.html";
+            location.href = "/Pages/immersion_lab";
         }, 800);
     });
 };
@@ -115,7 +115,7 @@ if(p3SectionLink){
     p3SectionLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Immersion_Lab/immersion.html";
+            location.href = "/Pages/immersion_lab";
         }, 800);
     });
 };
@@ -125,7 +125,7 @@ if(p4MenuLink){
     p4MenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Neuron/neuron.html";
+            location.href = "/Pages/neuron";
         }, 800);
     });
 };
@@ -135,7 +135,7 @@ if(p4SectionLink){
     p4SectionLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Neuron/neuron.html";
+            location.href = "/Pages/neuron";
         }, 800);
     });
 };
@@ -145,7 +145,7 @@ if(p5MenuLink){
     p5MenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Airbnb/airbnb.html";
+            location.href = "/Pages/airbnb";
         }, 800);
     });
 };
@@ -155,7 +155,7 @@ if(p5SectionLink){
     p5SectionLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Airbnb/airbnb.html";
+            location.href = "/Pages/airbnb";
         }, 800);
     });
 };
@@ -165,7 +165,7 @@ if(p6MenuLink){
     p6MenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Fracture/frature.html";
+            location.href = "/Pages/fracture";
         }, 800);
     });
 };
@@ -175,7 +175,7 @@ if(p6SectionLink){
     p6SectionLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = "/Pages/Fracture/frature.html";
+            location.href = "/Pages/fracture";
         }, 800);
     });
 };

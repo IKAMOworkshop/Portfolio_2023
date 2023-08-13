@@ -7,33 +7,175 @@ function pageIn(){
     }, 1200);
 };
 
-function pageOut(p1, p2){
-    const selectedPage = document.getElementById(p1);
+window.addEventListener('load', pageIn);
 
-    selectedPage.addEventListener('click', function(){
+const homeMenuLink = document.getElementById("home-link");
+if (homeMenuLink){
+    homeMenuLink.addEventListener("click", function(){
         transitionBlock.style.transform = "translate(0%, 0%)";
         setTimeout(function(){
-            location.href = p2;
+            location.href = "/Pages/Landing/index.html";
         }, 800);
     });
 };
 
-window.addEventListener('load', pageIn);
+const homeLogoLink = document.getElementById("logo-link");
+if (homeLogoLink){
+    homeLogoLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Landing/index.html";
+        }, 800);
+    });
+};
 
-pageOut.call(this,"home-link", "/Pages/Landing/index.html");
-pageOut.call(this,"logo-home", "/Pages/Landing/index.html");
-pageOut.call(this,"lab-link", "/Pages/Lab/lab.html");
-pageOut.call(this,"code-link", "/Pages/Code/code.html");
-pageOut.call(this,"about-link", "/Pages/About/about.html");
-pageOut.call(this,"p1-link", "/Pages/Nebula/nebula.html");
-pageOut.call(this,"p1-section", "/Pages/Nebula/nebula.html");
-pageOut.call(this,"p2-link", "/Pages/Angine/aingine.html");
-pageOut.call(this,"p2-section", "/Pages/Angine/aingine.html");
-pageOut.call(this,"p3-link", "/Pages/Immersion_Lab/immersion.html");
-pageOut.call(this,"p3-section", "/Pages/Immersion_Lab/immersion.html");
-pageOut.call(this,"p4-link", "/Pages/Neuron/neuron.html");
-pageOut.call(this,"p4-section", "/Pages/Neuron/neuron.html");
-pageOut.call(this,"p5-link", "/Pages/Airbnb/airbnb.html");
-pageOut.call(this,"p5-section", "/Pages/Airbnb/airbnb.html");
-pageOut.call(this,"p6-link", "/Pages/Fracture/frature.html");
-pageOut.call(this,"p6-section", "/Pages/Fracture/frature.html");
+const labMenuLink = document.getElementById("lab-link");
+if (labMenuLink){
+    labMenuLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Lab/lab.html";
+        }, 800);
+    });
+};
+
+const codeMenuLink = document.getElementById("code-link");
+if (codeMenuLink){
+    codeMenuLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Code/code.html";
+        }, 800);
+    });
+};
+
+const aboutMenuLink = document.getElementById("about-link");
+if (aboutMenuLink){
+    aboutMenuLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/About/about.html";
+        }, 800);
+    });
+};
+
+const p1MenuLink = document.getElementById("p1-link");
+if(p1MenuLink){
+    p1MenuLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Nebula/nebula.html";
+        }, 800);
+    });
+};
+
+const p1SectionLink = document.getElementById("p1-section");
+if(p1SectionLink){
+    p1SectionLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Nebula/nebula.html";
+        }, 800);
+    });
+    
+};
+
+const p2MenuLink = document.getElementById("p2-link");
+if(p2MenuLink){
+    p2MenuLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Angine/aingine.html";
+        }, 800);
+    });
+};
+
+const p2SectionLink = document.getElementById("p2-section");
+if(p2SectionLink){
+    p2SectionLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Angine/aingine.html";
+        }, 800);
+    });
+};
+
+const p3MenuLink = document.getElementById("p3-link");
+if(p3MenuLink){
+    p3MenuLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Immersion_Lab/immersion.html";
+        }, 800);
+    });
+};
+
+const p3SectionLink = document.getElementById("p3-section");
+if(p3SectionLink){
+    p3SectionLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Immersion_Lab/immersion.html";
+        }, 800);
+    });
+};
+
+const p4MenuLink = document.getElementById("p4-link");
+if(p4MenuLink){
+    p4MenuLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Neuron/neuron.html";
+        }, 800);
+    });
+};
+
+const p4SectionLink = document.getElementById("p4-section");
+if(p4SectionLink){
+    p4SectionLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Neuron/neuron.html";
+        }, 800);
+    });
+};
+
+const p5MenuLink = document.getElementById("p5-link");
+if(p5MenuLink){
+    p5MenuLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Airbnb/airbnb.html";
+        }, 800);
+    });
+};
+
+const p5SectionLink = document.getElementById("p5-section");
+if(p5SectionLink){
+    p5SectionLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Airbnb/airbnb.html";
+        }, 800);
+    });
+};
+
+const p6MenuLink = document.getElementById("p6-link");
+if(p6MenuLink){
+    p6MenuLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Fracture/frature.html";
+        }, 800);
+    });
+};
+
+const p6SectionLink = document.getElementById("p6-section");
+if(p6SectionLink){
+    p6SectionLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/Pages/Fracture/frature.html";
+        }, 800);
+    });
+};

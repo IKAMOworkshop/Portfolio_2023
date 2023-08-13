@@ -25,7 +25,7 @@
     <!-- Nav Bar -->
     <nav class="navbar-container">
         <!-- icons -->
-        <button id="logo-home" type="button" class="nav-icon-container page-links" href="/Pages/Landing/index.html">
+        <button id="logo-home" type="button" class="nav-icon-container page-links">
             <img src="../../Assets/Icons/icon_logo.svg" alt="Personal logo">
         </button>
         <button type="button" id="menu-button" class="nav-icon-container">
@@ -59,15 +59,15 @@
         <!-- Menu -->
         <div class="menu-container">
             <div style="display: flex; flex-direction: column;">
-                <button id="home-link" type="button" class="menu-title" href="/Pages/Landing/index.html">HOME</button>
-                <button id="lab-link" type="button" class="menu-title" href="/Pages/Lab/lab.html">LAB</button>
-                <button id="code-link" type="button" class="menu-title" href="/Pages/Code/code.html">CODE</button>
-                <button id="about-link" type="button" class="menu-title" href="/Pages/About/about.html">ABOUT</button>
+                <button id="home-link" type="button" class="menu-title">HOME</button>
+                <button id="lab-link" type="button" class="menu-title">LAB</button>
+                <button id="code-link" type="button" class="menu-title">CODE</button>
+                <button id="about-link" type="button" class="menu-title">ABOUT</button>
             </div>
         </div>
         <!-- Project Menu -->
         <div class="project-container">
-            <button id="p1-link" type="button" class="project-tile p1" href="/Pages/Nebula/nebula.html">
+            <button id="p1-link" type="button" class="project-tile p1">
                 <div class="project-hover-overlay">
                     <div class="title-container">
                         <h1 class="project-subtitle">NEUBLA</h1>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </button>
-            <button id="p2-link" type="button" class="project-tile p2" href="/Pages/Angine/aingine.html">
+            <button id="p2-link" type="button" class="project-tile p2">
                 <div class="project-hover-overlay">
                     <div class="title-container">
                         <h1 class="project-subtitle">ANGINE</h1>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </button>
-            <button id="p3-link" type="button" class="project-tile p3" href="/Pages/Immersion_Lab/immersion.html">
+            <button id="p3-link" type="button" class="project-tile p3">
                 <div class="project-hover-overlay">
                     <div class="title-container">
                         <h1 class="project-subtitle">IMMERESION LAB</h1>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
             </button>
-            <button id="p4-link" type="button" class="project-tile p4" href="/Pages/Neuron/neuron.html">
+            <button id="p4-link" type="button" class="project-tile p4">
                 <div class="project-hover-overlay">
                     <div class="title-container">
                         <h1 class="project-subtitle">NEURON</h1>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </button>
-            <button id="p5-link" type="button" class="project-tile p5" href="/Pages/Airbnb/airbnb.html">
+            <button id="p5-link" type="button" class="project-tile p5">
                 <div class="project-hover-overlay">
                     <div class="title-container">
                         <h1 class="project-subtitle">AIRBNB</h1>
@@ -107,7 +107,7 @@
                     </div>
                 </div>
             </button>
-            <button id="p6-link" type="button" class="project-tile p6" href="/Pages/Fracture/frature.html">
+            <button id="p6-link" type="button" class="project-tile p6">
                 <div class="project-hover-overlay">
                     <div class="title-container">
                         <h1 class="project-subtitle">FRACTURE</h1>
@@ -165,10 +165,10 @@
                     <p class="landing-description">An ecosystem that learns and adapts to provide suggestions and the best sleep routine for individuals.</p>
                     <p class="landing-tag">#EcosystemDesign</p>
                 </div>
-                <a href="../../Nebula/nebula.html" class="panel-button">
+                <button type="button" id="p1-section" class="panel-button">
                     View Project
                     <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_right.svg" alt="A right arrow">
-                </a>
+                </button>
             </div>
         </div>
         <!-- Video -->
@@ -190,7 +190,7 @@
                     <p class="landing-description">A virtual audio mixer that allows users to set up, manage, and save presets.</p>
                     <p class="landing-tag">#SoftwareDesign</p>
                 </div>
-                <button class="panel-button" type="button" onclick="smoothScroll(document.getElementById('project-one'))">
+                <button id="p2-section" class="panel-button" type="button">
                     View Project
                     <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_right.svg" alt="A right arrow">
                 </button>
@@ -218,10 +218,10 @@
                     <p class="landing-description">Exploring different emerging tech to expand beyond traditional design and prototyping process.</p>
                     <p class="landing-tag">#Tech-CenterResearch</p>
                 </div>
-                <a href="../../Nebula/nebula.html" class="panel-button">
+                <button type="button" id="p3-section" class="panel-button">
                     View Project
                     <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_right.svg" alt="A right arrow">
-                </a>
+                </button>
             </div>
         </div>
         <!-- Video -->
@@ -243,10 +243,10 @@
                     <p class="landing-description">A six months internship in a design agency working on various clients’ projects.</p>
                     <p class="landing-tag">#Internship</p>
                 </div>
-                <a href="../../Nebula/nebula.html" class="panel-button">
+                <button type="button" id="p4-section" class="panel-button">
                     View Project
                     <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_right.svg" alt="A right arrow">
-                </a>
+                </button>
             </div>
         </div>
         <!-- Video -->
@@ -268,10 +268,10 @@
                     <p class="landing-description">Redesigning the Identity of Airbnb</p>
                     <p class="landing-tag">#BrandDesign</p>
                 </div>
-                <a href="../../Nebula/nebula.html" class="panel-button">
+                <button type="button" id="p5-section" class="panel-button">
                     View Project
                     <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_right.svg" alt="A right arrow">
-                </a>
+                </button>
             </div>
         </div>
         <!-- Video -->
@@ -293,7 +293,7 @@
                     <p class="landing-description">An information poster to showcase my rhythm game score during quarantine.</p>
                     <p class="landing-tag">#DataVisualization</p>
                 </div>
-                <a href="../../Nebula/nebula.html" class="panel-button">
+                <a type="button" id="p6-section" class="panel-button">
                     View Project
                     <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_right.svg" alt="A right arrow">
                 </a>

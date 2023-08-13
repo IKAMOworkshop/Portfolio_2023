@@ -8,3 +8,5 @@ This project also carries my hopes and dreams to join my favorite design and dev
 - In CSS, box-sizing is crucial when working with percentages to prevent any overflowing of elements.
 - Use max and min for width and height to have an easier time during responsive.
 - Optimizing JS may not always be good in all situations. Think about readability, time usage, etc - no need to over-complicate your code.
+- File pathing is important for slugs if you want a nice-looking URL.
+- There are more META data to write than just description and favicon.

@@ -54,6 +54,12 @@ button:hover{
     overflow: hidden;
 }
 
+#top-page{
+    transform: scale(1.4);
+    transition: all .8s;
+    transition-timing-function: cubic-bezier(.17,.67,.31,.98);
+}
+
 .project-overlay{
     background: rgba(16, 17, 18, 0.5);
     position: absolute;

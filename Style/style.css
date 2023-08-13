@@ -1119,7 +1119,7 @@ li {
   z-index: 2000;
   background-color: rgb(16, 17, 18);
   transform: translate(0% -100%);
-  transition: all 0.8s;
+  transition: all 0.5s;
 }
 
 .transition-logo {
@@ -1177,6 +1177,12 @@ button:hover {
   width: 100%;
   position: relative;
   overflow: hidden;
+}
+
+#top-page {
+  transform: scale(1.4);
+  transition: all 0.8s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.31, 0.98);
 }
 
 .project-overlay {

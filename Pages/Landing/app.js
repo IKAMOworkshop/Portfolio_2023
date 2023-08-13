@@ -1,11 +1,11 @@
 $(function() {
     $.scrollify({
           section : "section",
-      });
-  });
+    });
+});
 
 //Page Scroll (TEMP: NEED ADJUST FOR SMOOTHER TRANSITION)
-  window.smoothScroll = function(target) {
+window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
         scrollContainer = scrollContainer.parentNode;
@@ -26,5 +26,4 @@ $(function() {
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}
-
+};

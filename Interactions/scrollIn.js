@@ -29,3 +29,18 @@ if (landingPage){
         });
     });
 }
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('content-show');
+        }
+    })
+},
+{
+    threshold: .1,
+});
+
+const hiddenElements = document.querySelectorAll(".content-hidden");
+hiddenElements.forEach((el) => observer.observe(el));

@@ -69,6 +69,16 @@ if (aboutMenuLink){
     });
 };
 
+const aboutFooterLink = document.getElementById("footer-about");
+if (aboutFooterLink){
+    aboutFooterLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/pages/about";
+        }, 800);
+    });
+};
+
 const p1MenuLink = document.getElementById("p1-link");
 if(p1MenuLink){
     p1MenuLink.addEventListener("click", function(){

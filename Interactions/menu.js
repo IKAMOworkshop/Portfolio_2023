@@ -41,7 +41,8 @@ document.addEventListener('scroll', scrollProgress);
 
 const emailButton = document.getElementById("email-link");
 const successMessage = document.getElementById("copied-succeed");
-const failedMessage = document.getElementById('copied-failed')
+const failedMessage = document.getElementById('copied-failed');
+const footerEmail = document.getElementById('footer-email');
 
 function copyEmail() {
     navigator.clipboard.writeText("changjeremy0226@gmail.com").then(() => {
@@ -62,3 +63,4 @@ function copyEmail() {
 }
 
 emailButton.addEventListener('click', copyEmail);
+footerEmail.addEventListener('click', copyEmail);

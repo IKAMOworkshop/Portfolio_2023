@@ -17,7 +17,7 @@
 
     <title>Jeremy Chang</title>
 </head>
-<body>
+<body id="full-page">
 
     <!-- Page Transition Cover -->
     <section class="transition-cover" id="transition-cover">
@@ -142,7 +142,7 @@
                     <p class="landing-description">A UIUX designer</p>
                     <p class="landing-tag">dedicated to creating digital experiences that bridge the gap between users and technology.</p>
                 </div>
-                <button class="panel-button" type="button" onclick="smoothScroll(document.getElementById('project-one'))">
+                <button class="panel-button" type="button" id="navigate-button">
                     Explore Projects
                     <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_down.svg" alt="A down arrow">
                 </button>
@@ -328,7 +328,7 @@
                         <p class="footer-description">Want to chat?</p>
                     </a>
                 </div>
-                <button class="panel-button" type="button" onclick="smoothScroll(document.getElementById('top-page'))">
+                <button class="panel-button" type="button" id="return-button">
                     Return
                     <img style="margin-left: 16px;" src="../../Assets/Icons/arrow_up.svg" alt="An up arrow">
                 </button>

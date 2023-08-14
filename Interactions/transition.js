@@ -4,7 +4,7 @@ function pageIn(){
     transitionBlock.style.transform = "translate(0%, 0%)";
     setTimeout(function(){
         transitionBlock.style.transform = "translate(0%, -100%)";
-    }, 1200);
+    }, 300);
 };
 
 window.addEventListener('load', pageIn);

@@ -1227,7 +1227,6 @@ button:hover {
   font-weight: 700;
   font-size: 5rem;
   color: rgb(255, 255, 255);
-  max-width: 400px;
   position: absolute;
   transform-origin: 0% 100%;
   transform: rotate(90deg);

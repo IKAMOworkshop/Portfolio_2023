@@ -29,6 +29,16 @@ if (homeLogoLink){
     });
 };
 
+const aboutHomeLink = document.getElementById("about-home");
+if (aboutHomeLink){
+    aboutHomeLink.addEventListener("click", function(){
+        transitionBlock.style.transform = "translate(0%, 0%)";
+        setTimeout(function(){
+            location.href = "/";
+        }, 800);
+    });
+};
+
 const labMenuLink = document.getElementById("lab-link");
 if (labMenuLink){
     labMenuLink.addEventListener("click", function(){

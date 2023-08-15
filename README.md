@@ -9,4 +9,6 @@ This project also carries my hopes and dreams to join my favorite design and dev
 - Optimizing JS may only sometimes be good in some situations. Think about readability, time usage, etc. - no need to over-complicate your code.
 - File pathing is important for slugs. If you want a nice-looking URL - create a folder of the respected page name and have an index file within it.
 - There is more META data to write than just description and favicon.
-- Use <main>, <footer>, etc., to make the code more readable to fellow developers and SEO systems.
+- Use main tag, footer tag, etc., to make the code more readable to fellow developers and SEO systems.
+- Make sure to use vh as the unit instead of percentage for height since it won't transfer well to mobile.
+- User test with the cursor movement before adding any smoothing since some people are not use to it.

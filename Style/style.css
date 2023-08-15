@@ -1205,6 +1205,7 @@ button:hover {
   width: 100%;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 #top-page {

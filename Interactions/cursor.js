@@ -10,7 +10,7 @@ document.body.onpointermove = event => {
     cursor.animate({
       left: `${clientX}px`,
       top: `${clientY}px`
-    }, {duration: 500, fill: "forwards"
+    }, {duration: 300, fill: "forwards"
     });
   };
 

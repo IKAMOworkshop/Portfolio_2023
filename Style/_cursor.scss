@@ -91,9 +91,10 @@
 
   // Responsive
 
+
   @media screen and (max-width: 480px){
     .cursor{
-      display: hidden;
+      display: none;
     }
     .gradient-wrapper{
       display: none;

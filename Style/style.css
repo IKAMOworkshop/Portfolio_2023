@@ -1433,7 +1433,7 @@ button:hover {
 
 @media screen and (max-width: 1024px) {
   .panel {
-    height: 100vh;
+    height: 100%;
   }
   .landing-description {
     font-size: 0.8rem;
@@ -1462,7 +1462,7 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .panel {
-    height: 100vh;
+    height: 100%;
   }
   .project-overlay {
     padding-left: 80px;
@@ -1491,7 +1491,7 @@ button:hover {
 }
 @media screen and (max-width: 480px) {
   .panel {
-    height: 100vh;
+    height: 100%;
   }
   .project-overlay {
     padding-left: 36px;

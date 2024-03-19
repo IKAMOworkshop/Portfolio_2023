@@ -32,7 +32,6 @@ if (landingPage){
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('content-show');
         }
@@ -47,7 +46,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 const titleObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('title-show');
         }
@@ -64,7 +62,6 @@ setTimeout(() => {
 
 const detailObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('detail-show');
         }
@@ -81,7 +78,6 @@ setTimeout(() => {
 
 const buttonObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('button-show');
         }
